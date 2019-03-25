@@ -17,8 +17,8 @@ ydata=np.square(xdata)+noise
 x=tf.placeholder(tf.float32,[None,1])
 y=tf.placeholder(tf.float32,[None,1])
 # 构建神经网络中间层
-weights_L1=tf.Variable(tf.random_normal([1,10]))
-biases_L1=tf.Variable(tf.zeros([1,10]))
+weights_L1=tf.Variable(tf.random_normal([1,10]))  #权重，10个神经元，所以输出为10，位于第一层，所以输入为1
+biases_L1=tf.Variable(tf.zeros([1,10]))           #偏见值
 wx_plus_b_L1=tf.matmul(x,weights_L1)+biases_L1 #信号总和
 L1=tf.nn.tanh(wx_plus_b_L1)
 # 定义神经网络输出层
