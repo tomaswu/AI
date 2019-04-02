@@ -1,0 +1,7 @@
+embeddings {
+  tensor_name: "embedding:0"
+  metadata_path: "F:\\AI/projector/projector/metadata.tsv"
+  sprite {
+    image_path: "F:\\AI/projector/data/mnist_10k_sprite.png"
+  }
+}
